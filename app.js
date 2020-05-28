@@ -6,7 +6,7 @@ function make2DArray(colms, rows) {
     return arr
 }
 
-var resolution = 20
+var resolution = 10
 var colms
 var rows
 var grid
