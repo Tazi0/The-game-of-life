@@ -6,7 +6,7 @@ function make2DArray(colms, rows) {
     return arr
 }
 
-var resolution = 10
+var resolution = 20
 var colms
 var rows
 var grid
@@ -25,7 +25,7 @@ function setup() {
         for (let y = 0; y < rows; y++) {
             grid[x][y] = {
                 active: Math.round(Math.random(1)), 
-                color: (randomColor) ? [random(255), random(255), random(255)] : (inverted) ? 0 : 255
+                color: (randomColor) ? [random(233), random(233), random(233)] : (inverted) ? 0 : 255
             }
         }
     }
@@ -33,6 +33,7 @@ function setup() {
 
 function draw() {
     background((inverted) ? 255 : 0)
+
     for (let i = 0; i < colms; i++) {
         for (let j = 0; j < rows; j++) {
             var x = i * resolution
